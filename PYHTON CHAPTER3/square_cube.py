@@ -1,0 +1,1 @@
+print(f'numbers \t square \t cube')

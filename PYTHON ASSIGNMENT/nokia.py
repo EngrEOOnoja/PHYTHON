@@ -1,3 +1,4 @@
+def nokia_3310_function():
 nokia = print("""
 
 	LIST OF FUNCTION..
@@ -16,7 +17,6 @@ nokia = print("""
        11. Clock.
        12. Profiles
        13. SIM Services.
-
 	 """)
 	
 menu = int(input("choose out of the nokia option  :"))

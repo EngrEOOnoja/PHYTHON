@@ -1,0 +1,4 @@
+for digit in range(6):
+	counter = counter + 1
+	for digit in range(6):
+		counter = counter + 1

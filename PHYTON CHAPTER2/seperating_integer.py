@@ -14,7 +14,7 @@ modulus = 10000
 while user > 9999 and user < 100000:
 	if cunter < 10:
 		number1 = user // counter
-		print('The number is ', + number1)
+		print('The number is', + number1)
 		number1 % counter
 		 counter /= 10
 		 
