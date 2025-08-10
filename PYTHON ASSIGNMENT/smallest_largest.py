@@ -1,0 +1,37 @@
+#Create an empty tuple
+#Add integers between 1 - 20 in the tuple
+#Sum of the elements at odd positions in the
+#tuple
+#Sum of the elements at even positions in the
+#tuple
+#Sum up the smallest and highest element in the
+#tuple
+#unpack the first five elements in the tuple
+
+
+
+
+digit = ()
+digit = 2, 3, 4, 12, 19, 14, 16, 17, 15, 5, 6
+for number in range (1,21):
+	lowest = min(digit)
+	highest = max(digit)
+print(lowest+highest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
