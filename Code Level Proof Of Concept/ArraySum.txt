@@ -1,0 +1,227 @@
+/*Given a 2D list, write a function that sum up all
+the element in each of the inner list and return a
+single list.
+Sample input : [ [2, 3, 4], [1, 5, 7], [4, 6, 8] ]
+Sample ouput: [9, 13, 18]*/
+
+
+
+import java.util.Arrays;
+public class Sum2Darray{
+public static void main(String[] args){
+int [][] array = { {2, 3, 4}, {1, 5, 7}, {4, 6, }] };
+int result = arraySum(array);
+System.out.print(Arrays.toString(result))
+
+
+}
+
+
+public static int [] arraySum(int [][] array){
+	int sum = 0;
+	int [] newArray = new array [3];
+	for(int index = 0; index < array.length; index++){
+		for(int count = 0; count < array[index].length; count++){
+		 	sum += array;
+		}
+			newArray.add(sum);
+	}
+
+		return newArray;
+
+}
+
+
+
+
+/*
+import java.util.ArrayList;
+import java.util.List;
+
+public class SumAndListExample {
+    public static void main(String[] args) {
+        // Initialize a List to store elements (similar to a dynamic array in JavaScript)
+        List<Integer> numbers = new ArrayList<>(); 
+        int sum = 0; // Variable to store the sum
+
+        // Using a for loop to add elements and calculate the sum
+        for (int i = 1; i <= 5; i++) {
+            int valueToAdd = i * 10; // Example: Add multiples of 10
+            numbers.add(valueToAdd); // Add the value to the ArrayList (equivalent to push)
+            sum += valueToAdd;      // Add the value to the sum
+        }
+
+        System.out.println("Elements in the list: " + numbers);
+        System.out.println("Sum of elements: " + sum);
+    }
+}
+Explanation:
+import java.util.ArrayList; and import java.util.List;:
+These lines import the necessary classes for using ArrayList, which is a dynamic array implementation in Java.
+List<Integer> numbers = new ArrayList<>();:
+This declares and initializes an ArrayList named numbers that can hold Integer objects. ArrayList is a resizable array, allowing elements to be added after creation, similar to how JavaScript arrays behave with push().
+int sum = 0;:
+A variable sum is initialized to 0 to accumulate the sum of the elements.
+for (int i = 1; i <= 5; i++) { ... }:
+This for loop iterates a specified number of times (in this case, 5 times).
+numbers.add(valueToAdd);:
+Inside the loop, valueToAdd is added to the numbers ArrayList using the add() method. This is the Java equivalent of Array.push() for adding an element to the end of a dynamic collection.
+sum += valueToAdd;:
+The valueToAdd is also added to the sum variable in each iteration, calculating the running total.
+AI responses may include mistakes. Learn more
+Videos
+
+7:24
+YouTube · Tech World Software School
+Running Sum of 1d Array - Leetcode 1480 - Java
+YouTube · Tech World Software School
+1 day ago
+
+5:54
+YouTube · Web Tech Knowledge
+#23 Sum of Array Elements in Java – the easiest Method (2025)
+YouTube · Web Tech Knowledge
+9 May 2025
+Easily sum up array elements in Java using a Scanner to get user input and a for loop to iterate through the array.
+
+4:01
+YouTube · thenewboston
+Java Programming Tutorial - 29 - Summing Elements of Arrays
+YouTube · thenewboston
+16 May 2009
+Sum an array in Java by initializing an array, creating a variable to store the sum, looping through the array to add each element to the sum, and then printing the sum.
+View all
+Discussions and forums
+How can i add specific values in an array in java?
+
+Stack Overflow · 
+6 answers
+ · 
+4 years ago
+ · 
+The for loop checks each element of the array and adds it to a temporary variable which will be added to sum if it's greater than 4.  
+More
+What is a Java program to find the sum of all elements in an array?
+
+Quora · 
+3 answers
+ · 
+3 months ago
+ · 
+Sum of array in while loop (Example)
+
+Treehouse · 
+2 answers
+ · 
+7 years ago
+ · 
+See more
+Add two array elements using loop - java
+
+Stack Overflow
+4 answers · 11 years ago
+I am trying a task with arrays: add two elements and check if the sum is less than or equal to 50. If the condition is satisfied, it should break.
+4 answers
+ 
+·
+ 
+Top answer: 
+There are a lot of ways to do this but here is a nifty trick that solves exactly this kind of problem. int[] nums = new int[2]; for (int i = 0; i < 100; ...
+can you add values in a for loop from an array?
+8 answers
+19 Apr 2013
+return the sum of values in an array - java
+6 answers
+6 Oct 2015
+More results from stackoverflow.com
+Java How To Calculate the Sum of Array Elements
+
+W3Schools
+https://www.w3schools.com › java › java_howto_sum_...
+Calculate the Sum of an Array. Get the sum of array elements: ExampleGet your own Java Server. int[] myArray ...
+Java Program to Compute the Sum of Numbers in a List ...
+
+GeeksforGeeks
+https://www.geeksforgeeks.org › java › java-program-t...
+23 Jul 2025 — Java Program to Compute the Sum of Numbers in a List Using For-Loop · Create the sum variable of an integer data type. · Initialize sum with 0.
+Java Program to Find Sum of Array Elements
+
+GeeksforGeeks
+https://www.geeksforgeeks.org › java › java-program-t...
+26 Jan 2023 — Algorithm · Initialize an array arr and a variable sum. · Set the value of sum=0. · Start a for loop from index 0 to the length of the array - 1.
+People also ask
+How do you sum an array in Java using a for loop?
+How to use a for loop to populate an array?
+How to push an array into an array in Java?
+How to create an array from 1 to 100 in Java?
+Feedback
+How to write a Java program to calculate the sum of even ...
+
+Quora
+8 answers · 4 years ago
+Write a Java program to calculate the sum of even numbers from 1 to 20. Your program should list the numbers and display their sum.
+8 answers
+ 
+·
+ 
+Top answer: 
+Here is a basic program to do that: [code]SUM = 0 FOR VALUE = 1 TO 20 IF VALUE/2 = INT(VALUE/2) ...
+Array.prototype.reduce() - JavaScript - MDN Web Docs
+
+MDN Web Docs
+https://developer.mozilla.org › ... › Array
+20 Jul 2025 — The reduce() method is an iterative method. It runs a "reducer" callback function over all elements in the array, in ascending-index order, and accumulates ...
+Array.prototype.reduceRight()
+TypedArray.prototype.reduce()
+Experimente
+Find Sum and Average in a Java Array
+
+Baeldung
+https://www.baeldung.com › Java › Java Array
+16 Aug 2024 — Sum Using a for Loop. To find the sum of all elements of an array, we can simply iterate the array and add each element to a sum accumulating ...
+Images
+Sum two arrays into a third array in Java
+Sum two arrays into a third array in Java
+
+YouTube
+Java program to Add array elements | Sum of Array Elements in Java
+Java program to Add array elements | Sum of Array Elements in Java
+
+YouTube
+java - Iterating over an ArrayList adding values - Stack ...
+java - Iterating over an ArrayList adding values - Stack ...
+
+Stack Overflow
+Show more images
+People also search for
+How to add elements in array in Java using for loop
+New array push sum equivalent in java using a for loop qui
+How to add elements to an array in Java dynamically
+How to add elements from one array to another in Java
+How to add String to array in Java
+Add element to array Java without index
+How to add objects to an array Java
+How to insert value to array in Java
+1	
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Next
+Results are personalised
+-
+Try without personalisation
+Nigeria
+Lagos Mainland, Lagos - Based on your past activity
+ - Update location
+HelpSend feedbackPrivacyTerms
+AI overview is ready
+
+
+
+*/
