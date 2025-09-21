@@ -1,20 +1,10 @@
-rows, cols = 2, 3
-
-matrix = [[0 for _ in range(cols)] for _ in range(rows)]
-
-counter = 1
-for i in range(rows):
-    for j in range(cols):
-        matrix[i][j] = counter
-        counter += 1
-
-print("   ", end="")
-for j in range(cols):
-    print(f"{j:>5}", end="")
-print()
-
-for i in range(rows):
-    print(f"{i:<3}", end="")   
-    for j in range(cols):
-        print(f"{matrix[i][j]:>5}", end="")
-    print()
+num1 = {1, 2, 4, 8, 16} | {1, 4, 16, 64, 256} # {1,2,4,8,16,64,256}
+print(num1)
+num2 = {1, 2, 4, 8, 16} & {1, 4, 16, 64, 256} # {1,4,16}
+print(num2)
+num3 = {1, 2, 4, 8, 16} - {1, 4, 16, 64, 256} # {2,8}
+print(num3)
+num4 = {1, 2, 4, 8, 16} ^ {1, 4, 16, 64, 256} # {2,8,64,256}
+print(num4)
+num5 = {1, 2, 4, 8, 16} > {1, 4, 16, 64, 256} # False
+print(num5)

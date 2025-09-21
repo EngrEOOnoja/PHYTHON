@@ -1,15 +1,6 @@
-from idlelib.configdialog import changes
+def count_duplicate_words(sentence):
+    words = sentence.lower().split()
+    print(set(words))
 
-
-def change(x, y, z):
-    return (z, x, y)   # third → first, first → second, second → third
-
-
-a, b, c = 'Doug', 22, 1984
-a, b, c = change(a, b, c)
-print(a, b, c)
-a, b, c = change(a, b, c)
-print(a, b, c)
-a, b, c = change(a, b, c)
-print(a, b, c)
-
+sentence = "This is a test This test is only a test"
+count_duplicate_words(sentence)

@@ -1,4 +1,9 @@
-.sorted(sequence) returns a new list with the elements in ascending order.
-sequence == sorted(sequence) checks if the original sequence is equal to that sorted version.
-If yes → returns True
-If not → returns False.
+from collections import Counter
+
+text = 'to be or not to be that is the question'
+counter = Counter(text.split())
+
+for words, count in sorted(counter.items()):
+    print(f'{words:<12} {count}')
+
+

@@ -1,14 +1,13 @@
-def is_palindrome(text):
-    cleaned = ''.join(char.lower() for char in text if char.isalnum())
-    stack = []
-    for char in cleaned:
-        stack.append(char)
-    for char in cleaned:
-        if char != stack.pop():
-            return False
-    return text
-
-
-word = "radar"
-print(is_palindrome(word)
-)
+tlds = {'Canada': 'ca', 'United States': 'us', 'Mexico': 'mx'}
+print('Canada' in tlds)
+print('France' in tlds)
+for country, tld in tlds.items():
+    print(f'{country:<15} {tld}')
+tlds['Sweden'] = 'sw'
+print(tlds)
+tlds['Sweden'] = 'se'
+print(tlds)
+reversed_tlds = {tld: country for country, tld in tlds.items()}
+print(reversed_tlds)
+uppercase_tlds = {tld: country.upper() for tld, country in reversed_tlds.items()}
+print(uppercase_tlds)
